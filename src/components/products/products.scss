@@ -1,0 +1,154 @@
+.products {
+ background-color: #eee3;
+ padding: 25px 40px;
+
+    &-card {
+        display: grid;
+        grid-template-columns: 320px 1fr;
+        gap: 30px;
+        padding: 50px 0;
+        min-height: 600px;
+    }
+
+    &__left {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;        
+        
+        &-card {
+            background: white;
+            border: 1px solid #E8A901;
+            border-radius: 12px;
+            padding: 20px 24px;
+            cursor: pointer;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            position: relative;
+            overflow: hidden;
+
+            &.active {
+                background:  #E8A901;
+            }
+
+            &::before {
+                content: '';
+                position: absolute;
+                top: 0;
+                left: -100%;
+                width: 100%;
+                height: 100%;
+                background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+                transition: left 0.5s;
+            }
+            
+            &:hover {
+                transform: translateX(2px) scale(1.01);
+                box-shadow: 1px 1px 10px rgba(102, 126, 234, 0.3);
+
+                &::before {
+                    left: 100%;
+                }
+            }
+
+            &:active {
+                transform: translateX(8px) scale(0.98);
+            }
+        }
+
+        &-card-title {
+            font-size: 17px;
+            font-weight: 600;
+            color: #E8A901;
+            letter-spacing: 0.3px;
+            position: relative;
+            z-index: 1;
+        }
+
+        &-card.active .products__left-card-title {
+            color: white;
+        }
+    }
+
+    &__right {
+        width: 100%;
+    }
+
+    &__right-card {
+        background: #ffffff;
+        border-radius: 16px;
+        padding: 32px;
+        box-shadow: 0 8px 32px rgba(0, 0, 0, 0.08);
+        animation: slideInRight 0.4s ease-out;
+        border: 1px solid rgba(102, 126, 234, 0.1);
+        margin-bottom: 20px;
+        transition: all 0.3s ease;
+
+        &:hover {
+            box-shadow: 0 12px 48px rgba(0, 0, 0, 0.12);
+            transform: translateY(-4px);
+        }
+
+        p:first-child {
+            font-size: 24px;
+            font-weight: 700;
+            color: #E8A901;
+            margin-bottom: 16px;
+            position: relative;
+            padding-bottom: 12px;
+
+            &::after {
+                content: '';
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                width: 60px;
+                height: 3px;
+                background: linear-gradient(90deg, #E8A901, #e8e78a);
+                border-radius: 2px;
+            }
+        }
+
+        p:last-child {
+            font-size: 16px;
+            line-height: 1.7;
+            color: #4a5568;
+            animation: fadeIn 0.6s ease-out 0.2s both;
+        }
+    }
+}
+
+@keyframes slideInRight {
+    from {
+        opacity: 0;
+        transform: translateX(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@media (max-width: 768px) {
+    .products {
+        grid-template-columns: 1fr;
+        gap: 24px;
+        padding: 30px 0;
+
+        &__left {
+            &-card {
+                &:hover {
+                    transform: scale(1.02);
+                }
+            }
+        }
+    }
+}
+

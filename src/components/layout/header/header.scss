@@ -1,0 +1,66 @@
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 990;
+    width: 100%;
+    background-color: white;
+
+    &__top {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 20px;
+        padding: 6px 0px;
+
+        &-left {
+            &-img {
+                width: 200px;
+                height: 60px;
+                object-fit: contain;
+            }
+        }
+
+        &-right {
+            &-img {
+                width: 200px;
+                height: 60px;
+                object-fit: contain;
+            }
+        }
+    }
+
+    &-nav {
+        &-item {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 30px;
+
+            &-link {
+                font-size: 16px;
+                font-weight: 400;
+                color: #111333;
+            }
+
+            &-link:hover {
+                border-bottom: 3px solid rgb(173, 173, 173);
+                padding-bottom: 4px;
+                transition: .3s;
+            }
+        }
+    }
+
+    .ReactFlagsSelect-module_label__27pw9,
+    .ReactFlagsSelect-module_secondaryLabel__37t1D {
+        font-size: 14px;
+        font-weight: 400;
+        color: #111333;
+    }
+    
+    .ReactFlagsSelect-module_selectBtn__19wW7 {
+        padding: 3px 6px;
+        border: none;
+    }
+
+}
