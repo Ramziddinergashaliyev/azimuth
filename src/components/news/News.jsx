@@ -5,10 +5,9 @@ import { GoArrowRight } from "react-icons/go";
 import { NEWS } from "../../static";
 
 const News = () => {
-
     const data = NEWS
-    console.log(data);
-    
+    console.log("news products",data);
+
 
     return (
         <div className="news container">
@@ -17,16 +16,21 @@ const News = () => {
                 <p className="news-top-text">View all post <GoArrowRight /> </p>
             </div>
             <div className="news-cards">
-                <div className="news-card">
-                    <div className="news-card-img">
-                        <img src="" alt="news-img" />
-                    </div>
-                    <div className="news-card-info">
-                        <h3 className="news-card-info-title"></h3>
-                        <p className="news-card-info-text"></p>
-                        <p className="news-card-info-desc">Read more</p>
-                    </div>
-                </div>
+                {
+                    data?.map(el => (
+                        <div key={el?.id} className="news-card">
+                            <div className="news-card-img">
+                                <img src={el?.img} alt="news-img" />
+                            </div>
+                            <div className="news-card-info">
+                                <h3 className="news-card-info-title">{el?.title}</h3>
+                                <p className="news-card-info-text">{el?.text}</p>
+                                <p className="news-card-info-desc">Read more</p>
+                            </div>
+                        </div>
+
+                    ))
+                }
             </div>
         </div>
     )

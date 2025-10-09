@@ -22,8 +22,6 @@ const About = () => {
                     <li className="about-middle-list">Compressor oils and much more.</li>
                 </ul>
             </div>
-
-
         </div>
     )
 }

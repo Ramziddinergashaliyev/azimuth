@@ -11,11 +11,11 @@ import { NavLink } from 'react-router-dom'
 
 const Header = () => {
   const [selected, setSelected] = useState("US");
+
   return (
     <header className='header'>
 
       <div className="header__top container">
-
         <div className="header__top-left">
           <img className='header__top-left-img' src={logo1} alt="header-logo" />
         </div>
@@ -23,7 +23,6 @@ const Header = () => {
         <div className="header__top-right">
           <img className='header__top-right-img' src={logo2} alt="headerEnd-logo" />
         </div>
-
       </div>
 
       <nav className='header-nav'>
@@ -57,11 +56,6 @@ const Header = () => {
           <li className="header-nav-item-list">
             <NavLink className={"header-nav-item-link"}>Download catalog in PDF</NavLink>
           </li>
-
-          {/* <select className='header-nav-select'>
-            <option value="Ru">🇷🇺  Russian</option>
-            <option value="En">🇬🇧  English</option>
-          </select> */}
 
           <div>
             <ReactFlagsSelect

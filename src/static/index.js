@@ -230,24 +230,25 @@ export const NEWS = [
     text: "Azimuth Lubricants Group plans to import 2 million liters of motor oils in 2024, which includes the launch of specialty lubricants for BEV and FCEV electric commercial vehicles.",
     desc: "The automotive industry is undergoing an unprecedented transformation with the advent of hybrid and electric vehicles. Electromobility represents a turning point in the history of the industry, bringing with it significant changes in engineering and design for many of our customers. Azimuth Lubricants Group takes into account the technical requirements of fluids for hybrid and electric vehicles, working with its customers to help them overcome these problems. As the world’s leading lubricants manufacturer, Shell has recently developed a new range of fluids for electric vehicles. As hybrid and electric vehicles continue to evolve and offer consumers ever greater levels of performance. Shell recently launched Shell E-Fluids, specialty oils and lubricants to support the electric powertrains of light, medium and heavy-duty battery electric (BEV) and fuel cell (FCEV) commercial vehicles. Working with truck and bus manufacturers, Shell has developed new fluids to meet the specific needs of various electric powertrains. Following the launch of Shell E-Fluids for passenger cars last May, manufacturers of all electric vehicles will now benefit from a range of specialist Shell E-Fluids and E-Greases, the company said.",
     linkOne: "",
-    linkTwo: ""},
+    linkTwo: ""
+  },
   {
     id: 2,
     img: img2,
     title: "Our marketplace exzap.uz",
-    text: "",
+    text: "Main text: EXZAP Marketplace was created and launched in 2017. A wide range of catalogs of auto parts, auto oils, and auto chemicals in the online store allows us to fully satisfy the demand and needs of our customers. The structure of the store’s website allows you to quickly make the correct selection and place an order for the necessary auto parts, motor oils, auto chemicals and other consumables. Our professional team of specialists is always ready to answer additional client questions. The company strictly adheres to: high-quality service and individual approach to each client, time and terms of order delivery. Competitive prices and high service make the EXZAP marketplace one of the leading distributors of auto parts in the Uzbekistan market. Marketplace EXZAP conducts seminars and trainings with staff on a regular basis, which contribute to the effective development of our company.",
     desc: "",
-    linkOne: "",
-    linkTwo: ""
+    linkOne: "https://www.youtube.com/watch?v=6IEkjfgWet8",
+    linkTwo: "https://youtu.be/mu3oCy6Kitc"
   },
   {
     id: 3,
     img: img3,
     title: "Grand opening of the EURO TRUCK PARTS CENTER truck parts store",
-    text: "Main text: EXZAP Marketplace was created and launched in 2017. A wide range of catalogs of auto parts, auto oils, and auto chemicals in the online store allows us to fully satisfy the demand and needs of our customers. The structure of the store’s website allows you to quickly make the correct selection and place an order for the necessary auto parts, motor oils, auto chemicals and other consumables. Our professional team of specialists is always ready to answer additional client questions. The company strictly adheres to: high-quality service and individual approach to each client, time and terms of order delivery. Competitive prices and high service make the EXZAP marketplace one of the leading distributors of auto parts in the Uzbekistan market. Marketplace EXZAP conducts seminars and trainings with staff on a regular basis, which contribute to the effective development of our company.",
+    text: "",
     desc: "",
-    linkOne: "https://www.youtube.com/watch?v=6IEkjfgWet8",
-    linkTwo: "https://youtu.be/mu3oCy6Kitc"
-
-  },
+    linkOne: "",
+    linkTwo: ""
+  }
+  
 ]
