@@ -4,7 +4,6 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 
 import 'swiper/css';
 import 'swiper/css/pagination';
-
 import { Pagination, Autoplay } from 'swiper/modules';
 
 import img1 from "../../assets/swipper/swipper-1.png"
@@ -28,7 +27,7 @@ const SWIPPER = [
     { id: 8, img: img8 },
     { id: 9, img: img9 },
 ]
-
+                              
 const Swipper = () => {
     return (
         <div className='swipper container'>
