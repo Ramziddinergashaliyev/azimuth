@@ -1,0 +1,24 @@
+.news {
+    padding: 25px;
+    &-top {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        &-title {
+            font-size: 46px;
+            font-weight: 600;
+            color: #E8A901;
+        }
+
+        &-text {
+            font-size: 24px;
+            font-weight: 300;
+            color: #111333;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            cursor: pointer;
+        }
+    }
+}

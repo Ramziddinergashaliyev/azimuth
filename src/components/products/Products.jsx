@@ -22,7 +22,7 @@ const Products = () => {
                 <div className='products__right'>
                     {
                         productData?.info?.map(el => (
-                            <div className="products__right-card">
+                            <div key={el?.id} className="products__right-card">
                                 <p>{el?.title}</p>
                                 <p>{el?.text}</p>
                             </div>

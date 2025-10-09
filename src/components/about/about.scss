@@ -1,0 +1,50 @@
+.about {
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+
+    &-info {
+        &-title {
+            font-size: 56px;
+            font-weight: 800;
+            color: #111333;
+            line-height: 66px;
+            padding-bottom: 14px;
+        }
+        
+        &-text {
+            font-size: 16px;
+            font-weight: 400;
+            color: #111333;
+            line-height: 28px;
+        }
+    }
+
+    &-middle {
+
+        &-title {
+            font-size: 20px;
+            font-weight: 600;
+            color: #E8A901;
+            margin-bottom: 10px;
+        }
+
+        &-item {
+            list-style-type: disc;
+            padding-left: 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 6px;
+        }
+
+        &-list {
+            font-size: 16px;
+            font-weight: 400;
+            color: #000;
+            line-height: 1.5;
+            list-style-type: inherit;
+        }
+
+    }
+}
