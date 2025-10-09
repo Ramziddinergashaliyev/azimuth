@@ -22,3 +22,9 @@ button {
     margin: 0 auto;
     max-width: 1440px;
 }
+
+@media (max-width: 1500px) {
+    .container {
+        width: 80%;
+    }
+}
