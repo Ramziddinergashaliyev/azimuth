@@ -3,11 +3,11 @@ import "./news.scss"
 import { FaArrowRight } from "react-icons/fa";
 import { GoArrowRight } from "react-icons/go";
 import { NEWS } from "../../static";
+import { useNavigate } from "react-router-dom";
 
 const News = () => {
     const data = NEWS
-    console.log("news products",data);
-
+    const navigate = useNavigate() 
 
     return (
         <div className="news container">
@@ -19,7 +19,7 @@ const News = () => {
                 {
                     data?.map(el => (
                         <div key={el?.id} className="news-card">
-                            <div className="news-card-img">
+                            <div onClick={() => navigate(`productItem/${el?.id}`)} className="news-card-img">
                                 <img src={el?.img} alt="news-img" />
                             </div>
                             <div className="news-card-info">

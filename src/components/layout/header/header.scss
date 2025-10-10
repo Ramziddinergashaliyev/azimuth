@@ -5,6 +5,7 @@
     z-index: 990;
     width: 100%;
     background-color: white;
+    border-bottom: 1px solid #aaa4;
     
     &__top {
         display: flex;
@@ -41,12 +42,12 @@
                 font-size: 16px;
                 font-weight: 500;
                 color: #111333;
+                transition: .3s;
             }
 
             &-link:hover {
                 border-bottom: 3px solid rgb(173, 173, 173);
-                padding-bottom: 4px;
-                transition: .3s;
+                padding-bottom: 7px;
             }
         }
     }
@@ -61,5 +62,9 @@
     .ReactFlagsSelect-module_selectBtn__19wW7 {
         padding: 3px 6px;
         border: none;
+    }
+
+    @media (max-width:1300px) {
+        
     }
 }

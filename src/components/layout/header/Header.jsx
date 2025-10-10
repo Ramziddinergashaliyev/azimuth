@@ -1,8 +1,7 @@
 import React, { useState } from 'react'
 import logo1 from "../../../assets/icons/header-logo.png"
 import logo2 from "../../../assets/icons/headerEnd-logo.png"
-import ru from "../../../assets/icons/ru.png"
-import en from "../../../assets/icons/en.png"
+import file from "../../../assets/images/Azimuth-Shelle.pdf"
 
 import ReactFlagsSelect from "react-flags-select";
 
@@ -16,9 +15,9 @@ const Header = () => {
     <header className='header'>
 
       <div className="header__top container">
-        <div className="header__top-left">
+        <NavLink to={"/"} className="header__top-left">
           <img className='header__top-left-img' src={logo1} alt="header-logo" />
-        </div>
+        </NavLink>
 
         <div className="header__top-right">
           <img className='header__top-right-img' src={logo2} alt="headerEnd-logo" />
@@ -26,9 +25,7 @@ const Header = () => {
       </div>
 
       <nav className='header-nav'>
-
         <ul className="header-nav-item">
-          
           <li className="header-nav-item-list">
             <NavLink className={"header-nav-item-link"}>Home</NavLink>
           </li>
@@ -54,7 +51,7 @@ const Header = () => {
           </li>
 
           <li className="header-nav-item-list">
-            <NavLink className={"header-nav-item-link"}>Download catalog in PDF</NavLink>
+            <a href={file} download className={"header-nav-item-link"}>Download catalog in PDF</a>
           </li>
 
           <div>
@@ -68,7 +65,6 @@ const Header = () => {
           </div>
 
         </ul>
-
       </nav>
     </header>
   )
