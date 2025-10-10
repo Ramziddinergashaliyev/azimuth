@@ -11,7 +11,7 @@ const Contact = () => {
                 <div className="contact-form-left">
                     <div className="contact-form-left-info">
                         <p className="contact-form-left-info-title"><FaMapMarkerAlt />Uzbekistan, Tashkent region, Zangiota district, Istiklol MFY, Ankhor street, 1 A-house</p>
-                        <p className="contact-form-left-info-title"><FaPhoneAlt />71 202 46 62 , 99 405 14 40</p>
+                        <p className="contact-form-left-info-title"><FaPhoneAlt /><a href="tel:71 202 46 62">71 202 46 62</a> , <a href="tel:99 405 14 40">99 405 14 40</a></p>
                         <p className="contact-form-left-info-title"><IoMdMail /> import@rtgparts.uz</p>
                     </div>
                     <div className="contact-form-left-map">

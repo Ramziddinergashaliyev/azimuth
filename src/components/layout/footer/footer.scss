@@ -32,4 +32,22 @@
             }
         }
     }
+
+    @media (max-width:460px) {
+        &-bottom {
+           flex-direction: column;
+        }
+
+        &-bottom-left {
+           padding: 20px 0px;
+        }
+
+        &-bottom-left-title {
+           padding-top: 10px;
+        }
+
+        &-bottom-right {
+           padding: 0px;
+        }
+    }
 }

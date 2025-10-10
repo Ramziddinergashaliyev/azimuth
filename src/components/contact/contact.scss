@@ -100,4 +100,78 @@
             }
         }
     }
+
+    @media (max-width:1200px) {
+        &-form-right-info-title {
+            font-size: 18px;
+        }
+
+        &-form-right-info-text {
+            font-size: 16px;
+        }
+
+        &-form-left-info-title {
+            font-size: 14px;
+            line-height: 20px;
+        }
+
+        &-form-right-massage label input {
+            padding: 10px;
+        }
+    }
+
+    @media (max-width:950px) {
+        &-form {
+            grid-gap: 20px;
+        }
+
+        &-title {
+            width: 100%;
+        }
+    }
+
+    @media (max-width:800px) {
+        &-form {
+            grid-template-columns: 1fr;
+        }
+
+        &-form-right-info-text {
+            padding-bottom: 10px;
+        }
+
+        &-form-right-info {
+            gap: 5px;
+        }
+
+        &-form-right-info-text {
+            padding-bottom: 10px;
+        }
+
+        .contact-form-right-massage label {
+            font-size: 14px;
+            gap: 4px;
+        }
+    }
+
+    @media (max-width:590px) {
+        padding: 10px 0px 10px;
+        &-title {
+            font-size: 19px;
+            font-weight: 400;
+            line-height: 26px;
+            padding-bottom: 10px;
+        }
+
+        &-form-right-massage {
+          gap: 10px;
+        }
+    }
+
+    @media (max-width:400px) {
+        &-title {
+            font-size: 18px;
+            line-height: 20px;
+        }
+    }
+
 }

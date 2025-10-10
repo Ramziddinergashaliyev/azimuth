@@ -12,7 +12,7 @@
             line-height: 66px;
             padding-bottom: 14px;
         }
-        
+
         &-text {
             font-size: 16px;
             font-weight: 400;
@@ -22,7 +22,6 @@
     }
 
     &-middle {
-
         &-title {
             font-size: 20px;
             font-weight: 600;
@@ -46,5 +45,31 @@
             list-style-type: inherit;
         }
 
+    }
+
+    @media (max-width:650px) {
+        padding: 10px 0px;
+
+        &-info-title {
+            font-size: 34px;
+            line-height: 38px;
+            font-weight: 500;
+        }
+
+        &-info-text {
+            font-size: 14px;
+            line-height: 20px;
+            font-weight: 400;
+        }
+    }
+
+    @media (max-width:530px) {
+        &-middle-title {
+            font-size: 17px;
+        }
+
+        &-middle-list {
+            font-size: 14px;
+        }
     }
 }

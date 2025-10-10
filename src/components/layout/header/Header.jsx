@@ -7,9 +7,12 @@ import ReactFlagsSelect from "react-flags-select";
 
 import "./header.scss"
 import { NavLink } from 'react-router-dom'
+import { SlMenu } from 'react-icons/sl';
+import { AiOutlineClose } from 'react-icons/ai';
 
 const Header = () => {
   const [selected, setSelected] = useState("US");
+  const [hide, setHide] = useState(false)
 
   return (
     <header className='header'>
@@ -21,11 +24,19 @@ const Header = () => {
 
         <div className="header__top-right">
           <img className='header__top-right-img' src={logo2} alt="headerEnd-logo" />
+          <button onClick={() => setHide(true)} className='header__top-right-btn'>
+            <SlMenu />
+          </button>
         </div>
       </div>
 
       <nav className='header-nav'>
-        <ul className="header-nav-item">
+        <ul className={`header-nav-item ${hide ? "header-nav-item-hide" : ""}`}>
+
+          <button onClick={() => setHide(false)} className="header-nav-item-close">
+            <AiOutlineClose />
+          </button>
+
           <li className="header-nav-item-list">
             <NavLink className={"header-nav-item-link"}>Home</NavLink>
           </li>
@@ -66,6 +77,7 @@ const Header = () => {
 
         </ul>
       </nav>
+
     </header>
   )
 }

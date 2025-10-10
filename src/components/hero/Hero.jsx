@@ -18,7 +18,7 @@ const Hero = () => {
                 loop={true}
                 pagination={{ clickable: true }}
                 autoplay={{
-                    delay: 3000,
+                    delay: 5000,
                     disableOnInteraction: false,
                 }}
                 modules={[Pagination, Autoplay]}
@@ -27,16 +27,18 @@ const Hero = () => {
                 <SwiperSlide className='hero-item'>
                     <img className='hero-item-img' src={img1} alt="hero-img" />
                 </SwiperSlide>
+
                 <SwiperSlide className='hero-item'>
                     <img className='hero-item-img' src={img2} alt="hero-img" />
-                    <div className="hero-item-info">
+                    <div className="hero-item-info container">
                         <p className="hero-item-info-title-big">Shell - Azimuth</p>
                         <p className="hero-item-info-title">Official macro distributor on the territory of the Republic of Uzbekistan</p>
                     </div>
                 </SwiperSlide>
+
                 <SwiperSlide className='hero-item'>
                     <img className='hero-item-img' src={img3} alt="hero-img" />
-                    <div className="hero-item-info">
+                    <div className="hero-item-info container">
                         <p className="hero-item-info-text">Handing over certificates “AZIMUTH LUBRICANTS GROUP”</p>
                         <p className="hero-item-info-text">for authorized Shell lubricant retail outlets</p>
                     </div>

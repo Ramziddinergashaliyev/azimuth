@@ -6,14 +6,13 @@
     width: 100%;
     background-color: white;
     border-bottom: 1px solid #aaa4;
-    
+
     &__top {
         display: flex;
         align-items: center;
         justify-content: space-between;
         gap: 20px;
         padding: 6px 0px;
-
         &-left {
             &-img {
                 width: 130px;
@@ -21,12 +20,25 @@
                 object-fit: contain;
             }
         }
-
         &-right {
+            display: flex;
+            align-items: center;
+            gap: 10px;
             &-img {
                 width: 130px;
                 height: 60px;
                 object-fit: contain;
+            }
+            &-btn {
+                border: none;
+                background-color: transparent;
+                display: none;
+                svg {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    font-size: 22px;
+                }
             }
         }
     }
@@ -37,7 +49,6 @@
             align-items: center;
             justify-content: center;
             gap: 30px;
-
             &-link {
                 font-size: 16px;
                 font-weight: 500;
@@ -49,6 +60,18 @@
                 border-bottom: 3px solid rgb(173, 173, 173);
                 padding-bottom: 7px;
             }
+
+            &-close {
+                position: absolute;
+                top: 26px;
+                right: 15px;
+                border: none;
+                background-color: transparent;
+                display: none;
+                svg {
+                    font-size: 24px;
+                }
+            }
         }
     }
 
@@ -58,13 +81,59 @@
         font-weight: 500;
         color: #111333;
     }
-    
+
     .ReactFlagsSelect-module_selectBtn__19wW7 {
         padding: 3px 6px;
         border: none;
     }
 
-    @media (max-width:1300px) {
-        
+    @media (max-width: 980px) {
+        &-nav-item {
+            gap: 10px;
+        }
+
+    }
+
+    @media (max-width: 800px) {
+        &-nav-item {
+            position: fixed;
+            top: 0px;
+            left: -100%;
+            width: 80%;
+            height: 100vh;
+            background-color: white;
+            box-shadow: 1px 1px 10px #aaa4;
+            gap: 20px;
+            display: flex;
+            align-items: flex-start;
+            justify-content: start;
+            flex-direction: column;
+            padding: 100px 20px;
+            transition: .6s;
+            z-index: 10;
+
+            &-link {
+                font-weight: 400;
+            }
+        }
+
+        &-nav-item-hide {
+            left: 0;
+        }
+
+        &__top-right-btn {
+            display: block;
+        }
+
+        &-nav-item-close {
+            display: block;
+        }
+
+    }
+
+    @media (max-width:400px) {
+        &__top-right-img {
+            display: none;
+        }
     }
 }

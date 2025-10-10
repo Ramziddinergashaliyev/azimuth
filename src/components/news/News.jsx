@@ -28,7 +28,6 @@ const News = () => {
                                 <p className="news-card-info-desc">Read more</p>
                             </div>
                         </div>
-
                     ))
                 }
             </div>

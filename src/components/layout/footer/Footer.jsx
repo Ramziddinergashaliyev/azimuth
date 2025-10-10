@@ -12,7 +12,7 @@ const Footer = () => {
         <div className="footer-bottom">
           <div className="footer-bottom-left">
             <img src={img1} alt="footer-img" />
-            <p className="footer-bottom-left-title">Copyright all rights reserved 2024.
+            <p className="footer-bottom-left-title">Copyright all rights reserved 2025.
             </p>
           </div>
           <div className="footer-bottom-right">
