@@ -16,7 +16,6 @@ const Header = () => {
 
   return (
     <header className='header'>
-
       <div className="header__top container">
         <NavLink to={"/"} className="header__top-left">
           <img className='header__top-left-img' src={logo1} alt="header-logo" />
