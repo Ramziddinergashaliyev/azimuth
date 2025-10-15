@@ -5,6 +5,7 @@ const App = lazy(() => import("./App.jsx"))
 import { BrowserRouter } from 'react-router-dom'
 import { Suspense } from 'react'
 import Leazy from './components/leazy/Leazy.jsx'
+import "./lang/i18n.js"
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>

@@ -15,6 +15,7 @@ import img6 from "../../assets/swipper/swipper-6.png"
 import img7 from "../../assets/swipper/swipper-7.png"
 import img8 from "../../assets/swipper/swipper-8.png"
 import img9 from "../../assets/swipper/swipper-9.png"
+import { useTranslation } from 'react-i18next';
 
 const SWIPPER = [
     { id: 1, img: img1 },
@@ -29,9 +30,11 @@ const SWIPPER = [
 ]
                               
 const Swipper = () => {
+    const { t, i18n } = useTranslation()
+
     return (
-        <div className='swipper container'>
-            <h2 className="swipper-title">Shell Products</h2>
+        <div id='swipper' className='swipper container'>
+            <h2 className="swipper-title">{t("Shell Products")}</h2>
             <Swiper
                 slidesPerView={1}
                 spaceBetween={10}

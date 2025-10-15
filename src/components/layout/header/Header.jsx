@@ -4,15 +4,26 @@ import logo2 from "../../../assets/icons/headerEnd-logo.png"
 import file from "../../../assets/images/Azimuth-Shelle.pdf"
 
 import ReactFlagsSelect from "react-flags-select";
-
 import "./header.scss"
 import { NavLink } from 'react-router-dom'
 import { SlMenu } from 'react-icons/sl';
 import { AiOutlineClose } from 'react-icons/ai';
+import { useTranslation } from 'react-i18next';
+import { HashLink } from 'react-router-hash-link';
 
 const Header = () => {
-  const [selected, setSelected] = useState("US");
-  const [hide, setHide] = useState(false)
+  const [selected, setSelected] = useState("RU");
+  const [hide, setHide] = useState(false);
+  const { t, i18n } = useTranslation();
+
+  const handleSelect = (code) => {
+    setSelected(code);
+    if (code === "US") {
+      i18n.changeLanguage("en");
+    } else if (code === "RU") {
+      i18n.changeLanguage("ru");
+    }
+  };
 
   return (
     <header className='header'>
@@ -31,54 +42,60 @@ const Header = () => {
 
       <nav className='header-nav'>
         <ul className={`header-nav-item ${hide ? "header-nav-item-hide" : ""}`}>
-
           <button onClick={() => setHide(false)} className="header-nav-item-close">
             <AiOutlineClose />
           </button>
 
           <li className="header-nav-item-list">
-            <NavLink className={"header-nav-item-link"}>Home</NavLink>
+            <HashLink to={"/#"} className="header-nav-item-link">{t("home")}</HashLink>
           </li>
 
           <li className="header-nav-item-list">
-            <NavLink className={"header-nav-item-link"}>Products</NavLink>
+            <HashLink smooth to={'/#products'} className='header-nav-item-link'>
+              {t("products")}
+            </HashLink>
           </li>
 
           <li className="header-nav-item-list">
-            <NavLink className={"header-nav-item-link"}>About us</NavLink>
+            <HashLink smooth to={"/#about"} className='header-nav-item-link'>
+              {t("about")}
+            </HashLink>
           </li>
 
           <li className="header-nav-item-list">
-            <NavLink className={"header-nav-item-link"}>Advantages</NavLink>
+            <HashLink smooth to={"/#engine"} className='header-nav-item-link'>
+              {t("advantages")}
+            </HashLink>
           </li>
 
           <li className="header-nav-item-list">
-            <NavLink className={"header-nav-item-link"}>News</NavLink>
+            <HashLink smooth to="/#news" className="header-nav-item-link">
+              {t("news")}
+            </HashLink>
           </li>
 
           <li className="header-nav-item-list">
-            <NavLink className={"header-nav-item-link"}>Contacts</NavLink>
+            <HashLink to={"/#contact"} className="header-nav-item-link">{t("contacts")}</HashLink>
           </li>
 
           <li className="header-nav-item-list">
-            <a href={file} download className={"header-nav-item-link"}>Download catalog in PDF</a>
+            <a href={file} download className="header-nav-item-link">
+              {t("download")}
+            </a>
           </li>
 
           <div>
             <ReactFlagsSelect
-              defaultCountry="US"
               countries={["US", "RU"]}
               customLabels={{ US: "English", RU: "Русский" }}
               selected={selected}
-              onSelect={code => setSelected(code)}
+              onSelect={handleSelect}
             />
           </div>
-
         </ul>
       </nav>
-
     </header>
-  )
-}
+  );
+};
 
-export default Header
+export default Header;

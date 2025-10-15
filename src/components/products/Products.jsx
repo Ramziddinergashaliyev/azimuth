@@ -1,14 +1,21 @@
 import React, { useState } from 'react'
 import "./products.scss"
-import { PRODUCTS } from '../../static'
+import { PRODUCTS, PRODUCTSRU } from '../../static'
+import { useTranslation } from 'react-i18next'
 
 const Products = () => {
+    const { t, i18n } = useTranslation()
+    
     const [productData, setProductData] = useState(PRODUCTS[0])
+    console.log(productData, i18n?.languages?.[0]);
+    
 
     const data = PRODUCTS
 
+    // const dataLang = i18n?.languages?.[0] === "ru" ? PRODUCTSRU : PRODUCTS 
+
     return (
-        <div className='products'>
+        <div id='products' className='products'>
             <div className="products-card container">
                 <div className="products__left">
                     {
@@ -19,6 +26,7 @@ const Products = () => {
                         ))
                     }
                 </div>
+
                 <div className='products__right'>
                     {
                         productData?.info?.map(el => (

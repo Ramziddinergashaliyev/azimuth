@@ -1,18 +1,21 @@
 import React from 'react'
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Pagination, Autoplay } from 'swiper/modules';
-import img1 from "../../assets/images/hero-1.jpg"
-import img2 from "../../assets/images/hero-2.jpg"
-import img3 from "../../assets/images/hero-3.jpg"
+import img1 from "../../assets/images/hero-1.webp"
+import img2 from "../../assets/images/hero-2.webp"
+import img3 from "../../assets/images/hero-3.webp"
 
 import 'swiper/css';
 import 'swiper/css/pagination';
 
 import "./hero.scss"
+import { useTranslation } from 'react-i18next';
 
 const Hero = () => {
+    const { t, i18n } = useTranslation()
+    
     return (
-        <div className='hero'>
+        <div id='hero' className='hero'>
             <Swiper
                 spaceBetween={30}
                 loop={true}
@@ -31,16 +34,16 @@ const Hero = () => {
                 <SwiperSlide className='hero-item'>
                     <img className='hero-item-img' src={img2} alt="hero-img" />
                     <div className="hero-item-info container">
-                        <p className="hero-item-info-title-big">Shell - Azimuth</p>
-                        <p className="hero-item-info-title">Official macro distributor on the territory of the Republic of Uzbekistan</p>
+                        <p className="hero-item-info-title-big">{t("Shell - Azimuth")}</p>
+                        <p className="hero-item-info-title">{t("Republic of Uzbekistan")}</p>
                     </div>
                 </SwiperSlide>
 
                 <SwiperSlide className='hero-item'>
                     <img className='hero-item-img' src={img3} alt="hero-img" />
                     <div className="hero-item-info container">
-                        <p className="hero-item-info-text">Handing over certificates “AZIMUTH LUBRICANTS GROUP”</p>
-                        <p className="hero-item-info-text">for authorized Shell lubricant retail outlets</p>
+                        <p className="hero-item-info-text">{t("AZIMUTH LUBRICANTS GROUP")}</p>
+                        <p className="hero-item-info-text">{t("outlets")}</p>
                     </div>
                 </SwiperSlide>
             </Swiper>

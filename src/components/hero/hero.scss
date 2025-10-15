@@ -17,7 +17,6 @@
         left: 50%;
         transform: translate(-50%, -50%);
         width: 80%;
-        // padding: 0 20px;
 
         &-text,
         &-title {
@@ -47,19 +46,17 @@
             font-size: 40px;
             line-height: 44px;
         }
-
+    
         &-item-info-title {
             font-size: 20px;
             line-height: 24px;
         }
-
+    
         &-item-info-text {
-          font-size: 24px;
-          line-height: 34px;
+            font-size: 24px;
+            line-height: 34px;
         }
     }
-
-
 
     @media (max-width:800px) {
         padding-top: 77px;
@@ -67,8 +64,8 @@
 
     @media (max-width:500px) {
         &-item-info {
-          width: 90%;
-          padding: 0px;
+            width: 90%;
+            padding: 0px;
         }
     }
 
@@ -84,8 +81,8 @@
         }
 
         &-item-info-text {
-          font-size: 18px;
-          line-height: 24px;
+            font-size: 18px;
+            line-height: 24px;
         }
     }
 }

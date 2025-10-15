@@ -155,6 +155,7 @@
 
     @media (max-width:590px) {
         padding: 10px 0px 10px;
+
         &-title {
             font-size: 19px;
             font-weight: 400;
@@ -163,7 +164,7 @@
         }
 
         &-form-right-massage {
-          gap: 10px;
+            gap: 10px;
         }
     }
 

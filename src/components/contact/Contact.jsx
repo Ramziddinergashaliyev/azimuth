@@ -2,15 +2,17 @@ import React from 'react'
 import "./contact.scss"
 import { FaMapMarkerAlt, FaPhoneAlt } from 'react-icons/fa'
 import { IoMdMail } from 'react-icons/io'
+import { useTranslation } from 'react-i18next'
 
 const Contact = () => {
+    const { t, i18n } = useTranslation()
     return (
-        <div className='contact container'>
-            <h3 className="contact-title">Contact us and we will deliver oils and lubricants anywhere in Uzbekistan</h3>
+        <div id='contact' className='contact container'>
+            <h3 className="contact-title">{t("anywhere")}</h3>
             <div className="contact-form">
                 <div className="contact-form-left">
                     <div className="contact-form-left-info">
-                        <p className="contact-form-left-info-title"><FaMapMarkerAlt />Uzbekistan, Tashkent region, Zangiota district, Istiklol MFY, Ankhor street, 1 A-house</p>
+                        <p className="contact-form-left-info-title"><FaMapMarkerAlt />{t("address")}</p>
                         <p className="contact-form-left-info-title"><FaPhoneAlt /><a href="tel:71 202 46 62">71 202 46 62</a> , <a href="tel:99 405 14 40">99 405 14 40</a></p>
                         <p className="contact-form-left-info-title"><IoMdMail /> import@rtgparts.uz</p>
                     </div>
@@ -20,27 +22,27 @@ const Contact = () => {
                 </div>
                 <div className="contact-form-right">
                     <div className="contact-form-right-info">
-                        <h3 className="contact-form-right-info-title">Didn’t find what you were looking for?</h3>
-                        <p className="contact-form-right-info-text">Any other questions? We will call you back and help you!</p>
+                        <h3 className="contact-form-right-info-title">{t("Didn’t")}</h3>
+                        <p className="contact-form-right-info-text">{t("questions")}</p>
                     </div>
                     <form className='contact-form-right-massage' action="">
                         <label htmlFor="">
-                            Your Name
+                            {t("Your Name")}
                             <input type="text" />
                         </label>
                         <label htmlFor="">
-                            Phone
+                            {t("Phone")}
                             <input type="text" />
                         </label>
                         <label htmlFor="">
-                            Your Email
+                            {t("Your Email")}
                             <input type="text" />
                         </label>
                         <label htmlFor="">
-                            Organization
+                            {t("Organization")}
                             <textarea name="" id=""></textarea>
                         </label>
-                        <button>Submit</button>
+                        <button>{t("Submit")}</button>
                     </form>
                 </div>
             </div>

@@ -2,12 +2,15 @@ import React from 'react'
 import "./engine.scss"
 import { FaCheckCircle } from 'react-icons/fa'
 
-import img from "../../assets/images/about.png"
+import img from "../../assets/images/about.webp"
 import { Riple } from 'react-loading-indicators'
+import { useTranslation } from 'react-i18next'
 
 const Engine = () => {
+   const { t, i18n } = useTranslation()
+
     return (
-        <div className='engine'>
+        <div id='engine' className='engine'>
             <div className="engine-card container">
                 <div className="engine-card-left">
                     <img className='engine-card-left-img' src={img} alt="engine-img" />
@@ -18,15 +21,15 @@ const Engine = () => {
                     </a>
                 </div>
                 <div className="engine-card-right">
-                    <p className="engine-card-right-text">Confident in the engine confident in the way</p>
-                    <h2 className="engine-card-right-title">Enhanced dynamic engine protection technology!</h2>
-                    <p className="engine-card-right-desc">Advantages of oils</p>
+                    <p className="engine-card-right-text">{t("Confident")}</p>
+                    <h2 className="engine-card-right-title">{t("Enhanced")}</h2>
+                    <p className="engine-card-right-desc">{t("Advantages")}</p>
                     <ul className="engine-card-right-item">
-                        <li className="engine-card-right-list"><FaCheckCircle />Long service life</li>
-                        <li className="engine-card-right-list"><FaCheckCircle />Extended oil change intervals</li>
-                        <li className="engine-card-right-list"><FaCheckCircle />Reducing oil consumption for topping up</li>
-                        <li className="engine-card-right-list"><FaCheckCircle />Engine protection in all weather conditions</li>
-                        <li className="engine-card-right-list"><FaCheckCircle />Reduced fuel and maintenance costs</li>
+                        <li className="engine-card-right-list"><FaCheckCircle />{t("life")}</li>
+                        <li className="engine-card-right-list"><FaCheckCircle />{t("Увеличенные")}</li>
+                        <li className="engine-card-right-list"><FaCheckCircle />{t("Reducing")}</li>
+                        <li className="engine-card-right-list"><FaCheckCircle />{t("protection")}</li>
+                        <li className="engine-card-right-list"><FaCheckCircle />{t("Снижение")}</li>
                     </ul>
                 </div>
             </div>
