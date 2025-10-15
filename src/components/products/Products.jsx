@@ -1,15 +1,13 @@
 import React, { useState } from 'react'
 import "./products.scss"
-import { PRODUCTS, PRODUCTSRU } from '../../static'
+import { PRODUCTS } from '../../static'
 import { useTranslation } from 'react-i18next'
 
 const Products = () => {
     const { t, i18n } = useTranslation()
     
     const [productData, setProductData] = useState(PRODUCTS[0])
-    console.log(productData, i18n?.languages?.[0]);
     
-
     const data = PRODUCTS
 
     // const dataLang = i18n?.languages?.[0] === "ru" ? PRODUCTSRU : PRODUCTS 

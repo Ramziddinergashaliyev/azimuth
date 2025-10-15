@@ -54,11 +54,11 @@
             align-items: center;
             justify-content: center;
             gap: 20px;
-            
+
             &-link {
                 font-size: 15px;
                 font-weight: 500;
-                color: #111333;
+                color: #3a3a3b;
                 transition: .3s;
             }
 
@@ -74,6 +74,7 @@
                 border: none;
                 background-color: transparent;
                 display: none;
+
                 svg {
                     font-size: 24px;
                 }

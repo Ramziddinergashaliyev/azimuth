@@ -1,10 +1,11 @@
 import React from 'react'
 import "./swipper.scss"
-import { Swiper, SwiperSlide } from 'swiper/react';
-
 import 'swiper/css';
 import 'swiper/css/pagination';
+
+import { Swiper, SwiperSlide } from 'swiper/react';
 import { Pagination, Autoplay } from 'swiper/modules';
+import { useTranslation } from 'react-i18next';
 
 import img1 from "../../assets/swipper/swipper-1.png"
 import img2 from "../../assets/swipper/swipper-2.png"
@@ -15,7 +16,6 @@ import img6 from "../../assets/swipper/swipper-6.png"
 import img7 from "../../assets/swipper/swipper-7.png"
 import img8 from "../../assets/swipper/swipper-8.png"
 import img9 from "../../assets/swipper/swipper-9.png"
-import { useTranslation } from 'react-i18next';
 
 const SWIPPER = [
     { id: 1, img: img1 },

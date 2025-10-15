@@ -222,7 +222,7 @@ export const PRODUCTS = [
   }
 ]
 
-export const PRODUCTSRU = [
+export const PRODUCTSEN = [
   {
     id: 1,
     title: "Моторные масла Shell Helix",
@@ -249,7 +249,6 @@ export const PRODUCTSRU = [
       }
     ]
   },
-  
   {
     id: 2,
     title: "Моторные масла Shell Rimula",
@@ -281,7 +280,6 @@ export const PRODUCTSRU = [
       }
     ]
   },
-
   {
     id: 3,
     title: "Моторные масла Shell Spirax",
@@ -298,7 +296,6 @@ export const PRODUCTSRU = [
       }
     ]
   },
-
   {
     id: 4,
     title: "Гидравлические масла Shell Tellus",
@@ -325,7 +322,6 @@ export const PRODUCTSRU = [
       }
     ]
   },
-
   {
     id: 5,
     title: "Редукторные масла Shell Omala",
@@ -342,7 +338,6 @@ export const PRODUCTSRU = [
       },
     ]
   },
-
   {
     id: 6,
     title: "Компрессорные масла Shell Corena",
@@ -359,7 +354,6 @@ export const PRODUCTSRU = [
       },
     ]
   },
-
   {
     id: 7,
     title: "Турбинные масла Shell Turbo",
@@ -371,7 +365,6 @@ export const PRODUCTSRU = [
       }
     ]
   },
-  
   {
     id: 8,
     title: "Масла-теплоносители Shell Heat Transfer HT2",
@@ -383,7 +376,6 @@ export const PRODUCTSRU = [
       }
     ]
   },
-
   {
     id: 9,
     title: "Многоцелевые смазки Shell Gadus",
@@ -401,11 +393,10 @@ export const PRODUCTSRU = [
       {
         id: 3,
         title: 'Shell Gadus S2V 220 AD 2',
-        text: 'Высококачественная пластичная смазка черного цвета S2 V220AD 2 используется для смазки подшипников, которые работают в условиях повышенной сложности. Она производится на основе минеральных масел, имеющих высокий индекс вязкости, с добавлением в качестве загустителя смешанного литиево-кальциевого мыла'
+        text: 'Высококачественная пластичная смазка черного цвета S2 V220AD 2 используется для смазки подшипников, которые работают в условиях повышенной сложности. Она производится на основе минеральных масел, имеющих высокий индекс вязкости, с добавлением в качестве загустителя смешанного литиево-кальциевого мыла.'
       },
     ]
   },
-
   {
     id: 10,
     title: "Холодильные масла REFRIGERATION",
@@ -422,7 +413,6 @@ export const PRODUCTSRU = [
       },
     ]
   },
-
   {
     id: 11,
     title: "Масла для газовых двигателей Shell Mysella",
@@ -439,20 +429,18 @@ export const PRODUCTSRU = [
       },
     ]
   },
-
   {
     id: 12,
     title: "SHELL RIMULA R2 Extra 20W-50",
     info: [
       {
         id: 1,
-        title: 'Shell Rimula R2 Extra 20W-50 всесезонные моторные масла для дизельных двигателей тяжелой техники. Содержат хорошо зарекомендовавшие себя сочетания присадок, которые отвечают изменяющимся потребностям двигателя. Они содержат активные дисперсанты, которые связывают частицы загрязнений, поддерживая чистоту… ',
-        text: 'Shell Rimula R2 Extra 20W-50 all-season motor oils for diesel engines of heavy equipment. Contains well-proven additive combinations that meet the changing needs of the engine. They contain active dispersants that bind contaminant particles, maintaining cleanliness…'
+        title: 'Shell Rimula R2 Extra 20W-50 всесезонные моторные масла для дизельных двигателей тяжелой техники. Содержат хорошо зарекомендовавшие себя сочетания присадок, которые отвечают изменяющимся потребностям двигателя. Они содержат активные дисперсанты, которые связывают частицы загрязнений, поддерживая чистоту…',
+        text: 'Shell Shell Rimula R2 Extra 20W-50 all-season motor oils for diesel engines of heavy equipment. Contains well-proven additive combinations that meet the changing needs of the engine. They contain active dispersants that bind contaminant particles, maintaining cleanliness…'
       }
     ]
   }
 ]
-
 
 //news
 
@@ -512,7 +500,7 @@ export const NEWSRU = [
     desc: "",
     linkOne: "https://www.youtube.com/watch?v=6IEkjfgWet8",
     linkTwo: "https://youtu.be/mu3oCy6Kitc",
-    oneLink: "Shell-Exzap",
+    oneLink: "Shell - Exzap",
     twoLink: "Exzap Office",
   },
   {
