@@ -11,7 +11,6 @@ const Products = () => {
     const data = PRODUCTS
 
     // const dataLang = i18n?.languages?.[0] === "ru" ? PRODUCTSRU : PRODUCTS 
-
     return (
         <div id='products' className='products'>
             <div className="products-card container">

@@ -1,11 +1,12 @@
 import React, { useState } from 'react'
+import "./header.scss"
+
 import logo1 from "../../../assets/icons/header-logo.png"
 import logo2 from "../../../assets/icons/headerEnd-logo.png"
 import file from "../../../assets/images/Azimuth-Shelle.pdf"
 
 import ReactFlagsSelect from "react-flags-select";
-import "./header.scss"
-import { NavLink } from 'react-router-dom'
+import { NavLink } from 'react-router-dom';
 import { SlMenu } from 'react-icons/sl';
 import { AiOutlineClose } from 'react-icons/ai';
 import { useTranslation } from 'react-i18next';
@@ -42,6 +43,7 @@ const Header = () => {
 
       <nav className='header-nav'>
         <ul className={`header-nav-item ${hide ? "header-nav-item-hide" : ""}`}>
+
           <button onClick={() => setHide(false)} className="header-nav-item-close">
             <AiOutlineClose />
           </button>

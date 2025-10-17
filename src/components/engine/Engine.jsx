@@ -7,11 +7,12 @@ import { Riple } from 'react-loading-indicators'
 import { useTranslation } from 'react-i18next'
 
 const Engine = () => {
-   const { t, i18n } = useTranslation()
+    const { t, i18n } = useTranslation()
 
     return (
         <div id='engine' className='engine'>
             <div className="engine-card container">
+
                 <div className="engine-card-left">
                     <img className='engine-card-left-img' src={img} alt="engine-img" />
                     <a href="https://www.youtube.com/watch?v=d9JQb12Kqqs">
@@ -20,6 +21,7 @@ const Engine = () => {
                         </div>
                     </a>
                 </div>
+
                 <div className="engine-card-right">
                     <p className="engine-card-right-text">{t("Confident")}</p>
                     <h2 className="engine-card-right-title">{t("Enhanced")}</h2>
@@ -32,6 +34,7 @@ const Engine = () => {
                         <li className="engine-card-right-list"><FaCheckCircle />{t("Снижение")}</li>
                     </ul>
                 </div>
+                
             </div>
         </div>
     )

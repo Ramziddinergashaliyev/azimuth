@@ -22,7 +22,44 @@ import img7 from "../../assets/images/swipper-7.webp"
 import img8 from "../../assets/images/swipper-8.webp"
 import img9 from "../../assets/images/swipper-9.webp"
 
-const imgs = [img1, img2, img3, img4, img5, img6, img7, img8, img9]
+const imgs = [
+  {
+    id: 1,
+    img: img1
+  },
+  {
+    id: 2,
+    img: img2
+  },
+  {
+    id: 3,
+    img: img3
+  },
+  {
+    id: 4,
+    img: img4
+  },
+  {
+    id: 5,
+    img: img5
+  },
+  {
+    id: 6,
+    img: img6
+  },
+  {
+    id: 7,
+    img: img7
+  },
+  {
+    id: 8,
+    img: img8
+  },
+  {
+    id: 9,
+    img: img9
+  }
+]
 
 const ProductItem = () => {
   const { id } = useParams()
@@ -34,7 +71,6 @@ const ProductItem = () => {
 
   return (
     <div className='productItem container'>
-
       <div className="productItem-img">
         <img src={data?.img} alt="product-img" />
       </div>
@@ -75,12 +111,12 @@ const ProductItem = () => {
               className="mySwiper"
             >
               {
-                imgs?.map((el, i) => (
+                imgs?.map((el) => (
                   <SwiperSlide
-                    key={i}
+                    key={el?.id}
                     className='productItem-swipper-img'
                     style={{
-                      backgroundImage: `url(${el})`,
+                      backgroundImage: `url(${el?.img})`,
                       backgroundSize: "cover",
                       backgroundPosition: "center",
                       backgroundRepeat: "no-repeat",

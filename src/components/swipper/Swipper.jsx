@@ -28,7 +28,7 @@ const SWIPPER = [
     { id: 8, img: img8 },
     { id: 9, img: img9 },
 ]
-                              
+
 const Swipper = () => {
     const { t, i18n } = useTranslation()
 
@@ -38,10 +38,10 @@ const Swipper = () => {
             <Swiper
                 slidesPerView={1}
                 spaceBetween={10}
-                loop={true} 
+                loop={true}
                 autoplay={{
-                    delay: 2500, 
-                    disableOnInteraction: false, 
+                    delay: 2500,
+                    disableOnInteraction: false,
                 }}
                 pagination={{ clickable: true }}
                 breakpoints={{
@@ -56,7 +56,7 @@ const Swipper = () => {
                     1024: {
                         slidesPerView: 3,
                         spaceBetween: 50,
-                    },
+                    }
                 }}
                 modules={[Pagination, Autoplay]}
                 className="mySwiper"
